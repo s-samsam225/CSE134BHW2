@@ -33,4 +33,21 @@
       </dialog>
       
   </main>
+
+<!--I had to add some Java in order to make the form only display after the info had been filled-->
+  <script>
+    const form = document.getElementById("contactForm");
+    const dialog = document.getElementById("confirmationDialog");
+    const closeBtn = document.getElementById("closeDialog");
+  
+    form.addEventListener("submit", (event) => {
+      event.preventDefault(); // prevent page reload
+      dialog.showModal(); // open the dialog
+      form.reset(); // optional: clear the form
+    });
+  
+    closeBtn.addEventListener("click", () => dialog.close());
+  </script>
+  
+
   
