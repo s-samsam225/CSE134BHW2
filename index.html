@@ -17,7 +17,7 @@
       border: 1px dashed gray;
     }
   </style>
-  <script></script>
+  <script>script.js</script>
 </head>
 <body>
   <header>
@@ -46,10 +46,12 @@
 
         <!-- CSS semantic custom element (you can border this in external CSS if desired) -->
         <portfolio-callout>
-          <header><b>Design Philosophy</b></header>
-          <p><i>Empathy</i>, evidence, iteration. Semantic HTML first, visuals later.<br>
-          <span>Accessible by default.</span></p>
-        </portfolio-callout>
+          <header><b>My Design Philosophy</b></header>
+          <p><i>
+            I believe in <span>user-centered design</span> that is accessible to everyone, 
+            sustainable in its impact, and mindful of how technology shapes human experiences.
+          </i></p>
+          </portfolio-callout>
       </article>
     </section>
 
@@ -60,37 +62,26 @@
         <li><a href="blog.html">Read the Blog</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
+      <p>This site is currently under development!</p>
       <p>Site status: <progress value="40" max="100">40%</progress></p>
     </section>
 
-    <!--SVG Section -->
-    <section aria-labelledby="graphics">
-      <h2 id="graphics">Personal Logo</h2>
-      <figure>
-        <svg viewBox="0 0 120 120" role="img" aria-labelledby="t d" width="120" height="120">
-          <title id="t">Personal Logo</title>
-          <desc id="d">Stylized initials 'S' and 'A' inside a circular frame representing balance between design and technology.</desc>
-          <!-- Outer circular frame -->
-          <circle cx="60" cy="60" r="50" stroke="black" fill="none" stroke-width="2"/>
-          <!-- Stylized initials (simplified paths) -->
-          <text x="35" y="70" font-size="40" font-family="sans-serif" stroke="black" fill="black">SA</text>
-        </svg>
-        <figcaption>
-          SVG logo representing my initials — merging science (circle precision) and art (typography).
-        </figcaption>
-      </figure>
-
-      <dialog open>
-        <p>This <code>&lt;dialog&gt;</code> demonstrates semantic markup.<br>
-        <button type="button">Close</button></p>
-      </dialog>
+    <!--Prints hello world to console-->
       <hello-world></hello-world>
-    </section>
   </main>
 
   <footer>
-    <nav aria-label="Footer"><a href="contact.html">Contact</a></nav>
-    <p><small>&copy; <time datetime="2025-10-21">2025</time> Sameera Agarwala</small></p>
+    <nav aria-label="Footer">
+      <a href="contact.html">Contact</a>
+      <a href="https://github.com/sameeraagarwala" target="_blank">
+        <svg viewBox="0 0 24 24" role="img" aria-labelledby="gitTitle gitDesc" width="40" height="40">
+          <title id="gitTitle">GitHub Icon</title>
+          <desc id="gitDesc">Link to Sameera Agarwala's GitHub profile.</desc>
+          <circle cx="12" cy="12" r="11" fill="none" stroke="black" />
+          <text x="7" y="18" font-size="16" fill="black">GH</text>
+        </svg>
+      </a>    
+    </nav>
   </footer>
 </body>
 </html>
