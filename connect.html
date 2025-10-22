@@ -1,53 +1,52 @@
 <main>
-    <h1>Connect</h1>
-    <form action="#" method="post">
-      <fieldset>
-        <legend>Contact me</legend>
-  
-        <label for="name">Name</label>
-        <input id="name" name="name" type="text" required>
-  
-        <label for="email">Email</label>
-        <input id="email" name="email" type="email" required>
-  
-        <label for="topic">Topic</label>
-        <input id="topic" name="topic" type="text">
-  
-        <label for="msg">Message</label>
-        <textarea id="msg" name="message" minlength="10" required></textarea>
-  
-        <p>Subscribe to follow up messages?
-          <label><input type="radio" name="sub" value="yes"> Yes</label>
-          <label><input type="radio" name="sub" value="no"> No</label>
-        </p>
-  
-        <p><label><input type="checkbox" name="ack" required> I agree to be contacted</label></p>
-  
-        <button type="submit">Send</button>
-      </fieldset>
-    </form>
-    <dialog open aria-labelledby="Form conformation">
-        <h3>Message Sent</h3>
-        <p>Your form submission has been received!</p>
-        <button type="button">OK</button>
-      </dialog>
-      
-  </main>
+  <!-- Main heading for this page -->
+  <h1>Connect</h1>
 
-<!--I had to add some Java in order to make the form only display after the info had been filled-->
-  <script>
-    const form = document.getElementById("contactForm");
-    const dialog = document.getElementById("confirmationDialog");
-    const closeBtn = document.getElementById("closeDialog");
-  
-    form.addEventListener("submit", (event) => {
-      event.preventDefault(); // prevent page reload
-      dialog.showModal(); // open the dialog
-      form.reset(); // optional: clear the form
-    });
-  
-    closeBtn.addEventListener("click", () => dialog.close());
-  </script>
-  
+  <!-- Contact form where users can send me messages directly -->
+  <!-- I'm keeping the action blank for now since there’s no backend yet -->
+  <form action="#" method="post">
+    <fieldset>
+      <!-- Grouping all form inputs under one accessible fieldset -->
+      <legend>Contact me</legend>
 
-  
+      <!-- Basic text field for user’s name -->
+      <label for="name">Name</label>
+      <input id="name" name="name" type="text" required>
+
+      <!-- Email field ensures correct email formatting before submission -->
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" required>
+
+      <!-- Optional topic input for categorizing messages later on -->
+      <label for="topic">Topic</label>
+      <input id="topic" name="topic" type="text">
+
+      <!-- Larger text area for the actual message -->
+      <!-- Added minlength for better-quality responses -->
+      <label for="msg">Message</label>
+      <textarea id="msg" name="message" minlength="10" required></textarea>
+
+      <!-- Radio buttons for subscription preferences -->
+      <!-- I wanted to make this fun and conversational instead of a generic checkbox -->
+      <p>Subscribe to follow up messages?
+        <label><input type="radio" name="sub" value="yes"> Yes</label>
+        <label><input type="radio" name="sub" value="no"> No</label>
+      </p>
+
+      <!-- Required checkbox for consent (helps with privacy compliance) -->
+      <p><label><input type="checkbox" name="ack" required> I agree to be contacted</label></p>
+
+      <!-- Submit button; not functional yet (HTML-only phase) -->
+      <button type="submit">Send</button>
+    </fieldset>
+  </form>
+
+  <!-- I plan on using JavaScript later to make this dialog show up only after form submission -->
+  <!-- For now, I kept 'open' just to demonstrate proper use of the <dialog> tag -->
+  <dialog open aria-labelledby="Form conformation">
+    <h3>Message Sent</h3>
+    <p>Your form submission has been received!</p>
+    <!-- Placeholder close button; will be functional once I add JS -->
+    <button type="button">OK</button>
+  </dialog>
+</main>
