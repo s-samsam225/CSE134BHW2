@@ -17,7 +17,7 @@
       border: 1px dashed gray;
     }
   </style>
-  <script>script.js</script>
+  <script src="assets/script.js"></script>
 </head>
 <body>
   <header>
@@ -39,7 +39,7 @@
       <h2 id="about">About Me</h2>
       <article>
         <picture>
-          <source srcset="assets/me.webp" type="image/webp">
+          <source srcset="assets/img/SameeraAgarwala.jpg" type="assets/img/SameeraAgarwala.jpg">
           <img src="assets/img/SameeraAgarwala.jpg" alt="Portrait of Sameera">
         </picture>
         <p>Hi! I’m Sameera, a third-year CS: Bioinformatics student who loves creating user-centered web experiences, combining technology with bioengineering, and designing tools that make research and healthcare more accessible.</p>
@@ -90,11 +90,23 @@
     <nav aria-label="Footer">
       <a href="contact.html">Contact Information</a>
       <a href="https://github.com/s-samsam225" target="_blank">
-        <svg viewBox="0 0 24 24" role="img" aria-labelledby="gitTitle gitDesc" width="80" height="40">
-          <title id="gitTitle">GitHub Icon</title>
+        <svg viewBox="0 0 100 100" role="img" aria-labelledby="gitTitle gitDesc" width="60" height="60">
+        <title id="gitTitle">GitHub Icon</title>
           <desc id="gitDesc">Link to Sameera Agarwala's GitHub profile.</desc>
-          <circle cx="12" cy="12" r="11" fill="none" stroke="black" />
-          <text x="7" y="18" font-size="16" fill="black">GH</text>
+            <!-- Outer circle -->
+            <circle cx="50" cy="50" r="45" fill="none" stroke="black" stroke-width="2" />
+
+            <!-- Centered text -->
+            <text
+              x="50"
+              y="58"
+              text-anchor="middle"
+              font-family="sans-serif"
+              font-size="28"
+              fill="black"
+            >
+            GH
+            </text>
         </svg>
       </a>    
     </nav>
