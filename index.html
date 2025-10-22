@@ -4,17 +4,18 @@
   <meta charset="utf-8">
   <title>Sameera Agarwala — Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content= "Portfolio of Sameera Agarwala: projects, experience, blog.">
-  <link rel="stylesheet" href="assets/tiny.css">
+  <meta name="description" content="Portfolio of Sameera Agarwala: projects, experience, blog.">
+  <link rel="stylesheet" href="assets/tiny.css"><!-- optional -->
   <script type="module" src="assets/hello-world.js"></script>
   <noscript>Your browser has JavaScript disabled; some enhancements won’t run.</noscript>
+  <style><!-- keep empty or border-only if used --></style>
+  <!-- 3rd-party placeholder: -->
+  <script>/* analytics placeholder only; no interactions */</script>
 </head>
 <body>
   <header>
     <h1>Sameera Agarwala</h1>
     <p><strong>CS: Bioinformatics</strong> &middot; <em>Design & Interaction</em></p>
-
-    <!-- Navigation Bar-->
     <nav aria-label="Primary">
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -32,10 +33,16 @@
       <h2 id="about">About Me</h2>
       <article>
         <picture>
-          <source srcset="assets/SameeraAgarwala.webp" type="image/webp">
-          <img src="assets/SameeraAgarwala.jpg" alt="Portrait of Sameera">
+          <source srcset="assets/me.webp" type="image/webp">
+          <img src="assets/me.jpg" alt="Portrait of Sameera">
         </picture>
         <p>Hello! I’m Sameera. I build user-centered web experiences and neurotech-adjacent projects.</p>
+
+        <!-- CSS semantic custom element (style via border only) -->
+        <portfolio-callout>
+          <header><b>Design Philosophy</b></header>
+          <p><i>Empathy</i>, evidence, iteration. Semantic HTML first, visuals later.<br><span>Accessible by default.</span></p>
+        </portfolio-callout>
       </article>
     </section>
 
@@ -43,7 +50,7 @@
       <h2 id="quick">Quick Links</h2>
       <ul>
         <li><a href="projects.html">See Projects</a></li>
-        <li><a href="blog.html">Read Blog</a></li>
+        <li><a href="blog.html">Read the Blog</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
       <p>Site status: <progress value="40" max="100">40%</progress></p>
